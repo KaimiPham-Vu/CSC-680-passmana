@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D06B0DB2269392B00E05346 /* ToolbarCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06B0DA2269392B00E05346 /* ToolbarCustomView.swift */; };
+		0D5BA80222653E2D006173BD /* NSTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5BA80122653E2D006173BD /* NSTableViewExtension.swift */; };
+		47AFC8E6718F856BE728665E /* Pods_passmana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1987D8BECF062F0C548516 /* Pods_passmana.framework */; };
+		E812AC6C21F1248300EF6386 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812AC6B21F1248300EF6386 /* KeychainItemAccessibility.swift */; };
+		E812AC6E21F1249A00EF6386 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812AC6D21F1249A00EF6386 /* KeychainWrapper.swift */; };
+		E812AC7021F1263800EF6386 /* SetMasterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812AC6F21F1263800EF6386 /* SetMasterPasswordViewController.swift */; };
+		E812AC7221F1288800EF6386 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812AC7121F1288800EF6386 /* UnlockViewController.swift */; };
+		E812AC7421F132F100EF6386 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812AC7321F132F100EF6386 /* MainViewController.swift */; };
+		E842BCA621F14D2E00B131F2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E842BCA521F14D2E00B131F2 /* CustomTableViewCell.swift */; };
+		E8607C582201255B00CA7EBC /* ResetMasterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8607C572201255B00CA7EBC /* ResetMasterPasswordViewController.swift */; };
+		E880587F21F571BD006B9055 /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880587E21F571BD006B9055 /* NSImageExtensions.swift */; };
+		E8953AF021F11D1000BBB89E /* CustomTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8953AEF21F11D1000BBB89E /* CustomTextFieldCell.swift */; };
+		E8953AF221F11D7300BBB89E /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8953AF121F11D7300BBB89E /* Database.swift */; };
+		E8C1FEF9220CB46200420A31 /* Prop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1FEF8220CB46200420A31 /* Prop.swift */; };
+		E8E1D9CB22222A6900B959CB /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1D9CA22222A6900B959CB /* WindowController.swift */; };
+		E8F313BE21F2997E00373C79 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F313BD21F2997E00373C79 /* EditViewController.swift */; };
+		E8F313C021F299F900373C79 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F313BF21F299F900373C79 /* ContainerViewController.swift */; };
+		E8F313C221F3953600373C79 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F313C121F3953600373C79 /* EmptyViewController.swift */; };
+		E8F7CC3C21F2339E00F11AB6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7CC3B21F2339E00F11AB6 /* TableViewController.swift */; };
+		E8F7CC3E21F233F400F11AB6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7CC3D21F233F400F11AB6 /* Login.swift */; };
+		E8F7CC4021F238E900F11AB6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7CC3F21F238E900F11AB6 /* DetailViewController.swift */; };
+		E8F939DB21F118FD004EFBB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F939DA21F118FD004EFBB2 /* AppDelegate.swift */; };
+		E8F939DF21F118FE004EFBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F939DE21F118FE004EFBB2 /* Assets.xcassets */; };
+		E8F939E221F118FE004EFBB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F939E021F118FE004EFBB2 /* Main.storyboard */; };
+		E8FF2E072206263900A5843F /* HyperlinkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF2E062206263900A5843F /* HyperlinkTextField.swift */; };
+		E8FF2E0922062AB500A5843F /* CursorChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF2E0822062AB500A5843F /* CursorChangingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E85478B52208BE5600A08DE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86688EB220A163B00AB6872 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D06B0DA2269392B00E05346 /* ToolbarCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarCustomView.swift; sourceTree = "<group>"; };
+		0D5BA80122653E2D006173BD /* NSTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableViewExtension.swift; sourceTree = "<group>"; };
+		20BA7AF6C9F77B0526BD90B0 /* Pods-passmana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passmana.debug.xcconfig"; path = "Target Support Files/Pods-passmana/Pods-passmana.debug.xcconfig"; sourceTree = "<group>"; };
+		A7141410EFA9619B1F87471D /* Pods-passmana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-passmana.release.xcconfig"; path = "Target Support Files/Pods-passmana/Pods-passmana.release.xcconfig"; sourceTree = "<group>"; };
+		BD1987D8BECF062F0C548516 /* Pods_passmana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_passmana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E812AC6B21F1248300EF6386 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		E812AC6D21F1249A00EF6386 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		E812AC6F21F1263800EF6386 /* SetMasterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMasterPasswordViewController.swift; sourceTree = "<group>"; };
+		E812AC7121F1288800EF6386 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
+		E812AC7321F132F100EF6386 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E842BCA521F14D2E00B131F2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E8607C572201255B00CA7EBC /* ResetMasterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetMasterPasswordViewController.swift; sourceTree = "<group>"; };
+		E880587E21F571BD006B9055 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
+		E8953AEF21F11D1000BBB89E /* CustomTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldCell.swift; sourceTree = "<group>"; };
+		E8953AF121F11D7300BBB89E /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		E8C1FEF8220CB46200420A31 /* Prop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prop.swift; sourceTree = "<group>"; };
+		E8E1D9CA22222A6900B959CB /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		E8F313BD21F2997E00373C79 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		E8F313BF21F299F900373C79 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E8F313C121F3953600373C79 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		E8F7CC3B21F2339E00F11AB6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E8F7CC3D21F233F400F11AB6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E8F7CC3F21F238E900F11AB6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8F939D721F118FD004EFBB2 /* passmana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passmana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F939DA21F118FD004EFBB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8F939DE21F118FE004EFBB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F939E121F118FE004EFBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8F939E321F118FE004EFBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F939E421F118FE004EFBB2 /* passmana.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = passmana.entitlements; sourceTree = "<group>"; };
+		E8FF2E062206263900A5843F /* HyperlinkTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperlinkTextField.swift; sourceTree = "<group>"; };
+		E8FF2E0822062AB500A5843F /* CursorChangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursorChangingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8F939D421F118FD004EFBB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AFC8E6718F856BE728665E /* Pods_passmana.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5BA7FD2265265E006173BD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E8953AF121F11D7300BBB89E /* Database.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0D5BA7FE22652669006173BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8F313BF21F299F900373C79 /* ContainerViewController.swift */,
+				E842BCA521F14D2E00B131F2 /* CustomTableViewCell.swift */,
+				E8F7CC3F21F238E900F11AB6 /* DetailViewController.swift */,
+				E8F313BD21F2997E00373C79 /* EditViewController.swift */,
+				E8F313C121F3953600373C79 /* EmptyViewController.swift */,
+				E8607C572201255B00CA7EBC /* ResetMasterPasswordViewController.swift */,
+				E812AC6F21F1263800EF6386 /* SetMasterPasswordViewController.swift */,
+				E8F7CC3B21F2339E00F11AB6 /* TableViewController.swift */,
+				E812AC7121F1288800EF6386 /* UnlockViewController.swift */,
+				0D06B0DA2269392B00E05346 /* ToolbarCustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D5BA7FF22652679006173BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8F7CC3D21F233F400F11AB6 /* Login.swift */,
+				E8C1FEF8220CB46200420A31 /* Prop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D5BA8002265275E006173BD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF2E0822062AB500A5843F /* CursorChangingView.swift */,
+				E8953AEF21F11D1000BBB89E /* CustomTextFieldCell.swift */,
+				E8FF2E062206263900A5843F /* HyperlinkTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0D65473E22668D5800089228 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E812AC7321F132F100EF6386 /* MainViewController.swift */,
+				E8E1D9CA22222A6900B959CB /* WindowController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D65474122668DB100089228 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E880587E21F571BD006B9055 /* NSImageExtensions.swift */,
+				0D5BA80122653E2D006173BD /* NSTableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7755449B5FA14C50E49FD9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20BA7AF6C9F77B0526BD90B0 /* Pods-passmana.debug.xcconfig */,
+				A7141410EFA9619B1F87471D /* Pods-passmana.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E812AC6A21F1246C00EF6386 /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E812AC6B21F1248300EF6386 /* KeychainItemAccessibility.swift */,
+				E812AC6D21F1249A00EF6386 /* KeychainWrapper.swift */,
+			);
+			path = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		E8F939CE21F118FD004EFBB2 = {
+			isa = PBXGroup;
+			children = (
+				E8F939D921F118FD004EFBB2 /* passmana */,
+				E8F939D821F118FD004EFBB2 /* Products */,
+				FDE2624A157184A133332DAC /* Frameworks */,
+				E7755449B5FA14C50E49FD9D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E8F939D821F118FD004EFBB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F939D721F118FD004EFBB2 /* passmana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8F939D921F118FD004EFBB2 /* passmana */ = {
+			isa = PBXGroup;
+			children = (
+				0D65474122668DB100089228 /* Extensions */,
+				0D65473E22668D5800089228 /* Controllers */,
+				0D5BA8002265275E006173BD /* Components */,
+				0D5BA7FF22652679006173BD /* Models */,
+				0D5BA7FE22652669006173BD /* Views */,
+				0D5BA7FD2265265E006173BD /* CoreData */,
+				E8F939E421F118FE004EFBB2 /* passmana.entitlements */,
+				E8F939E321F118FE004EFBB2 /* Info.plist */,
+				E8F939DA21F118FD004EFBB2 /* AppDelegate.swift */,
+				E8F939DE21F118FE004EFBB2 /* Assets.xcassets */,
+				E812AC6A21F1246C00EF6386 /* KeychainWrapper */,
+				E8F939E021F118FE004EFBB2 /* Main.storyboard */,
+			);
+			path = passmana;
+			sourceTree = "<group>";
+		};
+		FDE2624A157184A133332DAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1987D8BECF062F0C548516 /* Pods_passmana.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8F939D621F118FD004EFBB2 /* passmana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F939E721F118FE004EFBB2 /* Build configuration list for PBXNativeTarget "passmana" */;
+			buildPhases = (
+				437C9AD99AA76D8F55DC3B3C /* [CP] Check Pods Manifest.lock */,
+				E8F939D321F118FD004EFBB2 /* Sources */,
+				E8F939D421F118FD004EFBB2 /* Frameworks */,
+				E8F939D521F118FD004EFBB2 /* Resources */,
+				E81FE9DE2202510400303EC3 /* Codesign Embedded Frameworks */,
+				C2B73D9CB331BBB9D16EF254 /* [CP] Embed Pods Frameworks */,
+				E85478B52208BE5600A08DE3 /* Embed Frameworks */,
+				E86688EB220A163B00AB6872 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = passmana;
+			productName = passmana;
+			productReference = E8F939D721F118FD004EFBB2 /* passmana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8F939CF21F118FD004EFBB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "SFSU";
+				TargetAttributes = {
+					E8F939D621F118FD004EFBB2 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E8F939D221F118FD004EFBB2 /* Build configuration list for PBXProject "passmana" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8F939CE21F118FD004EFBB2;
+			productRefGroup = E8F939D821F118FD004EFBB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8F939D621F118FD004EFBB2 /* passmana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8F939D521F118FD004EFBB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F939DF21F118FE004EFBB2 /* Assets.xcassets in Resources */,
+				E8F939E221F118FE004EFBB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437C9AD99AA76D8F55DC3B3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-passmana-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B73D9CB331BBB9D16EF254 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-passmana/Pods-passmana-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FavIcon/FavIcon.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FavIcon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-passmana/Pods-passmana-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E81FE9DE2202510400303EC3 /* Codesign Embedded Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Codesign Embedded Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n#  codesign-frameworks.sh\n#  passmana\n#\n#  Created by 5/01/22.\n#  \n\n# WARNING: You may have to run Clean in Xcode after changing CODE_SIGN_IDENTITY!\n\n# Verify that $CODE_SIGN_IDENTITY is set\nif [ -z \"${CODE_SIGN_IDENTITY}\" ] ; then\necho \"CODE_SIGN_IDENTITY needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nif [ -z \"${CODE_SIGN_ENTITLEMENTS}\" ] ; then\necho \"CODE_SIGN_ENTITLEMENTS needs to be set for framework code-signing!\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ] ; then\nexit 1\nelse\n# Code-signing is optional for non-release builds.\nexit 0\nfi\nfi\n\nITEMS=\"\"\n\nFRAMEWORKS_DIR=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nif [ -d \"$FRAMEWORKS_DIR\" ] ; then\nFRAMEWORKS=$(find \"${FRAMEWORKS_DIR}\" -depth -type d -name \"*.framework\" -or -name \"*.dylib\" -or -name \"*.bundle\" | sed -e \"s/\\(.*framework\\)/\\1\\/Versions\\/A\\//\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${FRAMEWORKS}\"\nfi\n\nLOGINITEMS_DIR=\"${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}/Library/LoginItems/\"\nif [ -d \"$LOGINITEMS_DIR\" ] ; then\nLOGINITEMS=$(find \"${LOGINITEMS_DIR}\" -depth -type d -name \"*.app\")\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\nexit 1\nfi\n\nITEMS=\"${ITEMS}\"$'\\n'\"${LOGINITEMS}\"\nfi\n\n# Prefer the expanded name, if available.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\n# Fall back to old behavior.\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\necho \"Identity:\"\necho \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\"\n\necho \"Entitlements:\"\necho \"${CODE_SIGN_ENTITLEMENTS}\"\n\necho \"Found:\"\necho \"${ITEMS}\"\n\n# Change the Internal Field Separator (IFS) so that spaces in paths will not cause problems below.\n#SAVED_IFS=$IFS\n#IFS=$(echo -en \"\\n\\b\")\n\n# Loop through all items.\nfor ITEM in $ITEMS;\ndo\necho \"Signing '${ITEM}'\"\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" --entitlements \"${CODE_SIGN_ENTITLEMENTS}\" \"${ITEM}\"\nRESULT=$?\nif [[ $RESULT != 0 ]] ; then\necho \"Failed to sign '${ITEM}'.\"\nIFS=$SAVED_IFS\nexit 1\nfi\ndone\n\n# Restore $IFS.\n#IFS=$SAVED_IFS\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8F939D321F118FD004EFBB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5BA80222653E2D006173BD /* NSTableViewExtension.swift in Sources */,
+				E8F313BE21F2997E00373C79 /* EditViewController.swift in Sources */,
+				E842BCA621F14D2E00B131F2 /* CustomTableViewCell.swift in Sources */,
+				E8F313C021F299F900373C79 /* ContainerViewController.swift in Sources */,
+				E812AC7221F1288800EF6386 /* UnlockViewController.swift in Sources */,
+				E8953AF021F11D1000BBB89E /* CustomTextFieldCell.swift in Sources */,
+				E8F7CC4021F238E900F11AB6 /* DetailViewController.swift in Sources */,
+				E8607C582201255B00CA7EBC /* ResetMasterPasswordViewController.swift in Sources */,
+				E8FF2E0922062AB500A5843F /* CursorChangingView.swift in Sources */,
+				E880587F21F571BD006B9055 /* NSImageExtensions.swift in Sources */,
+				E8F7CC3C21F2339E00F11AB6 /* TableViewController.swift in Sources */,
+				E8E1D9CB22222A6900B959CB /* WindowController.swift in Sources */,
+				0D06B0DB2269392B00E05346 /* ToolbarCustomView.swift in Sources */,
+				E8C1FEF9220CB46200420A31 /* Prop.swift in Sources */,
+				E8953AF221F11D7300BBB89E /* Database.swift in Sources */,
+				E812AC6E21F1249A00EF6386 /* KeychainWrapper.swift in Sources */,
+				E812AC6C21F1248300EF6386 /* KeychainItemAccessibility.swift in Sources */,
+				E812AC7021F1263800EF6386 /* SetMasterPasswordViewController.swift in Sources */,
+				E8F939DB21F118FD004EFBB2 /* AppDelegate.swift in Sources */,
+				E8FF2E072206263900A5843F /* HyperlinkTextField.swift in Sources */,
+				E8F313C221F3953600373C79 /* EmptyViewController.swift in Sources */,
+				E8F7CC3E21F233F400F11AB6 /* Login.swift in Sources */,
+				E812AC7421F132F100EF6386 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8F939E021F118FE004EFBB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F939E121F118FE004EFBB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8F939E521F118FE004EFBB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8F939E621F118FE004EFBB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E8F939E821F118FE004EFBB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20BA7AF6C9F77B0526BD90B0 /* Pods-passmana.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = passmana/passmana.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3822QQG8P7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = passmana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swlkr.passmana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E8F939E921F118FE004EFBB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7141410EFA9619B1F87471D /* Pods-passmana.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = passmana/passmana.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3822QQG8P7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = passmana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swlkr.passmana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8F939D221F118FD004EFBB2 /* Build configuration list for PBXProject "passmana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F939E521F118FE004EFBB2 /* Debug */,
+				E8F939E621F118FE004EFBB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F939E721F118FE004EFBB2 /* Build configuration list for PBXNativeTarget "passmana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F939E821F118FE004EFBB2 /* Debug */,
+				E8F939E921F118FE004EFBB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8F939CF21F118FD004EFBB2 /* Project object */;
+}
